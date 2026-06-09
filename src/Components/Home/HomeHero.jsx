@@ -41,14 +41,7 @@ const HomeHero = () => {
         animate="visible"
         className="max-w-5xl mx-auto text-center flex flex-col items-center relative z-10"
       >
-        {/* 💡 BADGE: AI Status Badge with Shimmer / Pulse */}
-        <motion.div 
-          variants={fadeInUp}
-          className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/[0.03] border border-white/10 rounded-full backdrop-blur-md mb-6"
-        >
-          <Sparkles size={13} className="text-cyan-400 animate-pulse" />
-          <span className="text-[11px] font-mono tracking-widest text-zinc-400 uppercase">AuraUI v1.0 AI Engine Live</span>
-        </motion.div>
+        
 
         {/* 💡 HEADLINE: Bold Text Reveal */}
         <motion.h1 
