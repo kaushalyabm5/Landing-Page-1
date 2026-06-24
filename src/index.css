@@ -1,6 +1,62 @@
 @import "tailwindcss";
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #06040a; /* Dark background lets the thumb glow pop */
+}
 
-body{
-    font-family: 'Poppins', sans-serif;
+/* --- Premium Moving Glow Scrollbar --- */
+
+::-webkit-scrollbar {
+  /* Slightly wider width so the glow has room to breathe inside the path */
+  width: 14px; 
+  height: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* No path glow, completely clean track */
+}
+
+::-webkit-scrollbar-thumb {
+  /* This creates a thin, beautiful 6px moving piece */
+  background: linear-gradient(
+    to bottom, 
+    #22d3ee 0%,   /* cyan-400 */
+    #818cf8 50%,  /* indigo-400 */
+    #a855f7 100%  /* purple-500 */
+  );
+  
+  /* Transparent borders shrink the thumb visually to a thin piece, 
+     while tricking the browser into rendering the shadow perfectly */
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  border-radius: 9999px;
+
+  /* 🌟 THE GLOW: Moves with the small piece */
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.8), 
+              inset 0 0 4px rgba(255, 255, 255, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom, 
+    #06b6d4 0%,   
+    #6366f1 50%,  
+    #a855f7 100%  
+  );
+  border: 4px solid transparent;
+  background-clip: padding-box;
+
+  /* 🌈 HOVER GLOW: Switches to a strong cyan burst */
+  box-shadow: 0 0 18px rgba(34, 211, 238, 1), 
+              inset 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+/* For Firefox Fallback */
+@supports (scrollbar-width: thin) {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #ea81f8 transparent;
+    scroll-behavior: smooth;
+  }
 }

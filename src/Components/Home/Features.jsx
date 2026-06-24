@@ -48,22 +48,7 @@ const Features = () => {
     <section id="features" className="w-full bg-[#030303] py-20 px-6 md:px-12 lg:px-20 relative z-10 pointer-events-auto">
       <div className="max-w-6xl mx-auto">
         
-        {/* ========================================================
-            🤝 1. SOCIAL PROOF SECTION (TRUST LOGOS)
-            ======================================================== */}
-        <div className="text-center mb-32">
-          <p className="text-[11px] font-mono tracking-widest text-zinc-500 uppercase mb-8">
-            Trusted by developers at world-class companies
-          </p>
-          {/* Muted Text-based Logos for premium look */}
-          <div className="flex flex-wrap items-center justify-center gap-x-16 gap-y-8 opacity-40 grayscale group">
-            <span className="text-xl font-bold font-sans tracking-tight text-white hover:opacity-100 transition-opacity duration-300 cursor-default">Stripe</span>
-            <span className="text-xl font-semibold font-mono tracking-tighter text-white hover:opacity-100 transition-opacity duration-300 cursor-default">▲ Vercel</span>
-            <span className="text-xl font-bold font-sans text-white hover:opacity-100 transition-opacity duration-300 cursor-default">OpenAI</span>
-            <span className="text-xl font-medium font-mono text-white hover:opacity-100 transition-opacity duration-300 cursor-default">supabase</span>
-            <span className="text-xl font-semibold font-sans tracking-tight text-white hover:opacity-100 transition-opacity duration-300 cursor-default">Linear</span>
-          </div>
-        </div>
+    
 
         {/* ========================================================
             🍱 2. CORE FEATURES SECTION (BENTO GRID)
